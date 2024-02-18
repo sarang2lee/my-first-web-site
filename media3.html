@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpport" content="width=device-width, initial-scale=1">
+    
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            /* Create four equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 25%;
+                padding: 20px;
+                }
+            /* Clear floats after the columns */
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+                }
+            /* On screens that are 992px wide or less, go from four columns to two columns */
+            @media screen and (max-width: 992px)  {
+                .column {
+                    width: 25%;
+                }
+                }
+            /* On screens that are 600px wide or less, make the columns stack on top of each other instead next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 60%;
+                }
+            }
+
+</style>
+    </head>
+
+    <body>
+        <h2>Responsive Four Column Layout</h2>
+        <p><strong>Resize the browser window to see the responsive effect. </strong>On screens that are 992px wide or less, the columns will resize from four columns to two columns. On screens that are 600px wide or less, the columns will stack on top of each other instead of next to eachother.</p>
+        <div class="row">
+            <div class="column"
+                 style="background-color: #aaa;">
+                <h2>Column1</h2>
+                <p>1950년 9월 23일에는 매키런법이 의회를 통과했다. 그 법에 따라 미국의 안보를 위협한다고 생각되는 사람들을 수용하는 시설을 세울 수 있게 됐다. 그러나 백인 우월주의 비밀 단체인 쿠클러스클랜은 포함되지 않는데 이유는 “공산주의와 관계”가 없기 때문이었다. 
+                </p>
+            </div>
+
+            <div class="column"
+                style="background-color: #bbb;">
+                <h2>Column2</h2>
+                <p>미국이 건국된 이상에 비추어 보면 그리고 세계 규모의 자유를 위해 싸운다고 생각한다면, 1950년대 초반은 진정으로 어두운 시기였으며, 1955년 루이스 하츠가 용감하게 탐구한 절대주의적 복종의 가능성이 최대화한 시기였다. 체제 비판 세력은 총격이나 고문을 받지 않았지만 실직과 추방, 강한 심리적 압박을 겪었으며, 그들의 사상을 바꾸지 않으면 정치적 허용성의 영역에서 배제될 것이라는 경고를 받았다.</p>
+            </div>
+            <div class="column"
+                style="background-color: #ccc;">
+                    <h2>Column3</h2>
+                    <p>이 시기의 묘비명으로 적합한 것은 두려움을 모르는 독립적인 역사학자 해리 엘머 반스를 깊이 존경한 찰스 비어드로부터 나왔다.</p>
+            </div>
+
+            <div class="column"
+                style="background-color: #ddd;">
+                <h2>Column4</h2>
+                <p>“현실과 유리된 정치적 경계는 경솔하게 자의적으로 형성되지만, 일단 만드르어지면 불가사의한 신성함을 띤다. 모든 국경 분쟁은 세계 전쟁이 되며 세계 평화는 사라진다. 이런 어리석은 정책 때문에 국제주의와 개입주의는 ”영구적 평화를 위한 영구적 전쟁“을 불러와 국경을 보증하게 된다. 작은 국가들과 그들ㄹ의 불가사의한 경계를 위협하는 행동은 어떤 것이든 허용할 수 없는 ”침략 전쟁“이 되며, 그것에 반대하는 것은 세계의 기반을 파괴할 수 있기ㅣ 때문이다.”</p>
+            </div>
+    <div>
+            <a href="#">Link1</a>
+            <a href="#">LInk2</a>
+            <a href="#">Link3</a>
+            <a href="#">LInk4</a>
+    </div>
+    </body>
+</html>

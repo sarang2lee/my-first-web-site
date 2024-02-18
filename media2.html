@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpport" content="width=device-width, initial-scale=1">
+    
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            /* Style the top navvigation bar */
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+            /* Style the top nav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding:10px 10px;
+                text-decoration: none;
+            }
+            /* Change color on hover */
+            .topnav a:hover {
+                background-color: #0c7691;
+                color:black;
+            }
+            /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other*/
+            @media screen and (max-width:600px) {
+                .topnav a {
+                    float: top;
+                    width: 25%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Responsive navigation menu</h2>
+        <p>Resize the browser window to see the effect: when the screen is less than 600px, the navigation menu will be displayed verticalliyl instead of horizontally.</p>
+        <div class="topnav">
+            <a href="#">Link1</a>
+            <a href="#">LInk2</a>
+            <a href="#">Link3</a>
+            <a href="#">LInk4</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web Tutorials">
+        <meta name="keywords" content="HTNL. CSS, XML, JavaScript"> Define keywords for search engines:
+        <meta name="author" content="Dori Lee"> Define the author of a page:
+        <meta http-equiv="refresh" content="30"> Refresh document every 30 seconds:
+        <meta name="viewport" content="Width=device-width, initial-scale=1.0"> Setting the viewport to make your website look good on all devices:
+    </head>
+    <body>
+        <h1>The meter element</h1>
+
+        <p>The meter element is used to display a gauge:</p>
+        <label for="disk_c">Disk usage C:</label>
+            <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>
+        <label for="disk_d">D:</label>
+            <meter id="disk_d" value="0.6">60%</meter>
+        <p><strong>Note:</strong>The meter tag is not supported in Edge 12 (or earler).</p>
+        <hr>
+        
+        <p>All meta information goes in the head section</p>
+        <menu>
+            <li>The meta> tag defines metadata about an HTML document. Metadata is data (information) about data.</li>
+
+            <li>meta> tags always go inside the head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.</li>
+            
+            <li>Metadata will not be displayed on the page, but is machine parsable.</li>
+            
+            <li>Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.</li>
+            
+            <li>There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the meta> tag (See "Setting The Viewport" example below).</li>
+        </menu>
+        <hr>
+        <h4> Size Content to The Viewport</h4>
+            <p>Users are used to scroll websites vertically on both desktop and mobile devices - but not horizontally!</p>
+            <p>So, if the user is forced to scroll horizontally, or zoom out, to see the whole web page it results in a poor user experience.</p>
+            
+            <h4>Some additional rules to follow:</h4>
+            
+            <p>1. Do NOT use large fixed width elements - For example, if an image is displayed at a width wider than the viewport it can cause the viewport to scroll horizontally. Remember to adjust this content to fit within the width of the viewport.</p>
+            
+            <p>2. Do NOT let the content rely on a particular viewport width to render well - Since screen dimensions and width in CSS pixels vary widely between devices, content should not rely on a particular viewport width to render well.</p>
+            
+            <p>3. Use CSS media queries to apply different styling for small and large screens - Setting large absolute CSS widths for page elements will cause the element to be too wide for the viewport on a smaller device. Instead, consider using relative width values, such as width: 100%. Also, be careful of using large absolute positioning values. It may cause the element to fall outside the viewport on small devices.</p>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .article1 {
+                padding: 0%;
+                margin: 1px;
+            }
+            .article1 
+                h2, dt {
+                color: brown;
+                background-color:beige;
+                padding:0%;
+            }
+            .article1 
+                dd, li {
+                    color:blueviolet;
+                    width: 100%;
+                    background-color:rgb(37, 36, 36)
+                    padding: 2px;
+
+                }
+            .aside 
+                dt {
+                font-style: italic;
+                background-color: bisque;
+                padding: 5px;
+                }
+            .aside 
+                dd{
+                background-color: gold;
+                }
+    </style>
+</head>
+
+<body>
+    <article class="article1">
+        <h2>Discription List</h2>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+    </article>
+    <hr>
+
+    <article class="article1">
+
+        <h2>Unordered List with Disc Bullets</h2>
+
+        <ul style="list-style-type:disc;">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>        
+    <hr>
+
+        <h2>Unordered List with Circle</h2>
+
+        <ul style="list-style-type:circle;">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+    <hr>
+
+        <h2>Unordered List with square</h2>
+
+        <ul style="list-style-type:square;">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <ul>
+            <li>실론티</li>
+            <li>보이차</li>
+            <li>모리화차</li>
+          </ul>
+          <li>Milk</li>
+        </ul>
+    <hr>
+
+        <h2>Unordered List with None</h2>
+
+        <ul style="list-style-type:none;">
+          <li>Coffee</li>
+          <ol>
+            <li>Arabica</li>
+            <li>Columbia</li>
+            <li>Ethiopia</li>
+          </ol>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+
+    </article>
+    <hr>
+
+    <aside class="aside">
+        <dl>
+            <dt>HTML Description Lists</dt>
+            <dd>A description list is a list of terms, with a description of each term. The dl> tag defines the description list, the dt> tag defines the term (name), and the dd> tag describes each term:</dd>
+            <br>
+            <dt>Unordered HTML List - Choose List Item Marker</dt>
+            <dd>The CSS list-style-type property is used to define the style of the list item marker. It can have one of the following values:</dd>
+            <br>
+            <dt>Nested List</dt>
+            <dd>Lists can be nested(list inside list) and the bullet is automatically changed for clearance</dd>
+            <br>
+        </dl>
+    </aside>
+</body>
+    
+</html>

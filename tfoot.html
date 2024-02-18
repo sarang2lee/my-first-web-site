@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--All HTML documents must start with a <!DOCTYPE> declaration.
+The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.-->
+<!--Tip: The <!DOCTYPE> declaration is NOT case sensitive.-->
+<!--In older documents (HTML 4 or XHTML), the declaration is more complicated because the declaration must refer to a DTD (Document Type Definition).-->
+<html>
+    <head>
+        <title>HTML에서 표를 다루기</title>
+        <style>
+            thead {
+                color:green;
+                background-color: darkseagreen;
+                font-size: 140%;
+
+            }
+            tbody {color: whitesmoke;
+            background-color: lightgray;
+            }
+            tfoot {color: brown;
+            background-color: beige;
+            }     
+
+            table, th, td {
+                border: 1px solid pink;
+            }
+        </style>
+    </head>
+    <body>
+<!-- 이 비디오 코딩 샘플은 동영상이 재생하지 못하고 있습니다. 뭐가 문제인지 나중에 짚어보아야 합니다-->
+        <video width="320" height="240" controls>
+            <source src="[뮤직비디오]베이비복스 - 우연.mp4" type="video/mpeg">
+            <source src="[뮤직비디오]소찬휘-Tears.mp4" type="video/mpeg">
+            <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        </video>
+
+        <h1>The thead, tbody, and tfoot elements - Styled with CSS</h1>
+        <table style="width: 50%;">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+
+            <tbody style="text-align: center;">
+                <tr>
+                <td>January</td>
+                <td>USD 5,000,000</td>
+                </tr>
+
+             <tr>
+                <td>February</td>
+                <td>USD 3,000,000</td>
+            </tr>
+
+            <tr>
+                <td>March</td>
+                <td>USD 300,000</td>
+            </tr>
+
+            <tr>
+                <td>April</td>
+                <td>KRW 100,000</td>
+            </tr>
+
+            <tr>
+                <td>March</td>
+                <td>USD 10,000,000</td>
+            </tr>
+
+            <tr>
+                <td>June</td>
+                <td>USD 9,000,000</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>USD 500,000</td>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td>USD 300,000,000</td>
+            </tr>
+            </tbody>
+
+            <tfoot style="text-align: center;vertical-align: center;">
+                <tr style="height:100px">
+                    <td>How much Year 2023 Total</td>
+                    <td>USD 34,000,000</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </body>
+</html>

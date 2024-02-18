@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html><body>
+
+    <h3>JavaScript에서 ID 속성을 사용하기</h3>
+    <p>자바스크립트는 getElementById() method를 이용해서 특별한 id를 가진 어떤 요소에 접근할 수 있습니다</p>
+    <h1 id="myHeader">여러분 반갑습니다</h1>
+    <button onclick="displayResult()">문자를 바꾸세요</button>
+
+    <script>
+        function displayResult() {
+            document.getElementById("myHeader").innerHTML = "오늘 하루를 멋지게 보내세요";
+        }
+    </script>
+
+    <h1> Chapter Summary</h1>
+    <ul>
+        <li>The id attribute is used to specify a unique id for an HTML element</li>
+        <li>The value of the id attribute must be unique within the HTML document</li>
+        <li>The id attribute is used by CSS and JavaScript to style/select a specific element</li>
+        <li>The value of the id attribute is case sensitive</li>
+        <li>The id attribute is also used to create HTML bookmarks</li>
+        <li>JavaScript can access an element with a specific id with the getElementById() method</li>
+    </ul>
+</body></html>

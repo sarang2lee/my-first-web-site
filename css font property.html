@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a:link {text-decoration: none;}
+            a:visited {text-decoration: none;}
+            a:hover {text-decoration: underline;}
+            a:active {text-decoration: underline;}
+            p.a {
+                font: 30px/50px Arial, sans-serif;
+            }
+
+            p.b {
+                font: italic small-caps bold 2vw/5vw Georgia,serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Styling a link with text-decoration property</h2>
+        <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+        <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective</p>
+        <p><b>Note:</b> s:active MUST come after a:hover in the CSS definition in order to be effective</p>
+
+        <h1>The font property</h1>
+        <p class="a">This is a paragraph. The font size is set to 30pixels, and the font-height is set to 50 pixels, and the font family is Arial.</p>
+        <p class="b">This is a paragraph. The font size is set to italic, small-caps and bold, the font size is set to 12 pixels, the line height is set to 30 pixels, and the font family is Georgia.</p>
+
+    </body>
+</html>
